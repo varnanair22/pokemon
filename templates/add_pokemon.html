@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+
+
+
+<form action="add_pokemon" method="POST">
+  {% csrf_token %}
+  <div class = "pokemon_css">
+    <h2 style="color:#000066; text-align:center"> Add Pokemon </h2>
+      {%for message in messages%}
+      <h2 style="color:#ff0000"><font size="-1">{{message}}</font>
+     </h2>
+     {% endfor %}
+      </br>
+    <label for="uname"><b>Name</b></label>
+      <br>
+    <input type="text" placeholder="Enter Name" name="name" required>
+
+    <br>
+    <br>
+
+    <label for="psw"><b>Url</b></label>
+      <br>
+    <input type="text" placeholder="Enter Url" name="url" required>
+
+    </br>
+    </br>
+
+
+    <button type="submit" name="create">Create</button>
+
+
+
+  </div>
+
+</form>
+{% endblock %}
