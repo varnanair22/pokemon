@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Arial, Helvetica, sans-serif; background-image: url('/static/images/website_new.jpg');}
+form {border: 3px solid #f1f1f1;}
+
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  text-align: center;
+  color: white;
+  height: 75px;
+}
+
+</style>
+</head>
+<body>
+
+<h2 style="color:#6699ff; text-align:left"><font size="6">Pokemons</font></h2>
+
+{%for message in messages%}
+<h2 style="color:#ff0000"><font size="-1">{{message}}</font></h2>
+{% endfor %}
+{% block content %}
+
+{% endblock %}
+
+</body>
+</html>

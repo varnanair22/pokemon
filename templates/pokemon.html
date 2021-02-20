@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+    <table style="width:50%">
+      <tr>
+        <th>Name</th>
+        <th>URL</th>
+      </tr>
+      {% for poke in pokemons %}
+      <tr>
+        <td>{{poke.name}}</td>
+        <td><a href="{{poke.url}}">{{poke.url}}</a></td>
+      </tr>
+      {% endfor %}
+    </table>
+{% endblock %}
