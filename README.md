@@ -17,11 +17,12 @@ Once pip has finished downloading the dependencies:
 
 (env)$ cd pokemon
 (env)$ python manage.py runserver
+
 And navigate to http://127.0.0.1:8000/ for listing the pokemons.
 
-http://127.0.0.1:8000/admin can be used to add, edit and delete pokemons using admin module.
+http://127.0.0.1:8000/admin used to add, edit and delete pokemons using admin module.
 Credentials:
-Username - amdin
+Username - admin
 Password - admin123
 
 http://127.0.0.1:8000/add_pokemon used for adding pokemons via api.
